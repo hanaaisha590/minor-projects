@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+            font-family: Arial;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+
+        header {
+            background-color: #3b7ab5;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+         header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        
+        .summary-section {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+            .card {
+                background-color: white;
+                padding: 20px;
+                flex: 1;
+                min-width: 250px;
+                text-align: center;
+                border: 2px solid #e0e0e0;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            
+        }
+
+            
+    
+            .card h3 {
+                font-size: 1.2rem;
+                margin-bottom: 15px;
+            }
+            
+    
+            .amount {
+                font-size: 1.8rem;
+                font-weight: bold;
+                color: #3b7ab5;
+            }
+            
+
+            
+    
+            .categories-section, .transactions-section {
+                background-color: white;
+                border-radius: 10px;
+                box-shadow:#333;
+                padding: 20px;
+                margin-bottom: 30px;
+                
+            }
+    
+            .categories-section h2, .transactions-section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+    
+            .category-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 0;
+                border-bottom: 1px solid #eee;
+                color: rgb(66, 82, 135);
+            }
+    
+            .category-name {
+                font-size: 1.1rem;
+            }
+    
+            .category-amount {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+    
+            .transaction-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                border-bottom: 1px solid #eee;
+            }
+    
+            .transaction-info {
+                display: flex;
+                flex-direction: column;
+                color: rgb(66, 82, 135);
+            }
+    
+            .transaction-title {
+                font-size: 1.1rem;
+            }
+    
+            .transaction-date {
+                font-size: 0.9rem;
+                color: #888;
+            }
+    
+            .transaction-amount {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: rgb(66, 82, 135);
+            }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Expense Tracker</h1>
+        <p>Track your monthly spending</p>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Summary Cards Section -->
+        <section class="summary-section">
+            <div class="card">
+                <h3>Total Spent</h3>
+                <div class="amount">$2,450.00</div>
+            </div>
+
+            <div class="card">
+                <h3>Highest Category</h3>
+                <div class="amount">Food</div>
+            </div>
+
+            <div class="card">
+                <h3>Current Month</h3>
+                <div class="amount">June 2026</div>
+            </div>
+        </section>
+
+        <!-- Expense Categories Section -->
+        <section class="categories-section">
+            <h2>Expense Categories</h2>
+
+            <div class="category-item">
+                <span class="category-name">Food</span>
+                <span class="category-amount">$850.00</span>
+            </div>
+
+            <div class="category-item">
+                <span class="category-name">Transport</span>
+                <span class="category-amount">$350.00</span>
+            </div>
+
+            <div class="category-item">
+                <span class="category-name">Shopping</span>
+                <span class="category-amount">$620.00</span>
+            </div>
+
+            <div class="category-item">
+                <span class="category-name">Entertainment</span>
+                <span class="category-amount">$630.00</span>
+            </div>
+        </section>
+
+        <!-- Recent Transactions Section -->
+        <section class="transactions-section">
+            <h2>Recent Transactions</h2>
+
+            <div class="transaction-card">
+                <div class="transaction-info">
+                    <div class="transaction-title">Grocery Shopping</div>
+                    <div class="transaction-date">June 1, 2026</div>
+                </div>
+                <div class="transaction-amount">-$125.50</div>
+            </div>
+
+            <div class="transaction-card">
+                <div class="transaction-info">
+                    <div class="transaction-title">Gas Refill</div>
+                    <div class="transaction-date">May 31, 2026</div>
+                </div>
+                <div class="transaction-amount">-$65.00</div>
+            </div>
+
+            <div class="transaction-card">
+                <div class="transaction-info">
+                    <div class="transaction-title">Movie Tickets</div>
+                    <div class="transaction-date">May 30, 2026</div>
+                </div>
+                <div class="transaction-amount">-$30.00</div>
+            </div>
+
+            <div class="transaction-card">
+                <div class="transaction-info">
+                    <div class="transaction-title">Restaurant Dinner</div>
+                    <div class="transaction-date">May 29, 2026</div>
+                </div>
+                <div class="transaction-amount">-$95.75</div>
+            </div>
+
+            <div class="transaction-card">
+                <div class="transaction-info">
+                    <div class="transaction-title">Online Shopping</div>
+                    <div class="transaction-date">May 28, 2026</div>
+                </div>
+                <div class="transaction-amount">-$210.00</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

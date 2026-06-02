@@ -1,0 +1,29 @@
+
+        body{
+            background-color: black;
+            color: burlywood;
+        }
+        form{
+            border: 1px solid whitesmoke;
+            border-radius: 10px;
+            display: block;
+
+        }
+        #jim{
+            text-align: center;
+            font-family: Arial;
+        }
+        
+        .kim{
+            display: flex;
+            justify-content: end;
+            gap:40px;
+        }
+
+
+        .lol{
+            display: flex;
+            direction: row;
+            justify-content: space-around;
+        }
+        
